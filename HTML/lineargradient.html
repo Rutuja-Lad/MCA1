@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html canvas-text</title>
+</head>
+<body>
+    <canvas id="DemoCanvas" width="500" height="600"></canvas>
+    <script>
+        var canvas=document.getElementById("DemoCanvas");
+        if(canvas.getContext){
+            var ctx=canvas.getContext("2d");
+            gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+            gradient.addColorstop("0","red");
+            gradient.addColorstop(".25","yellow");
+            gradient.addColorstop(".50", "green");
+            gradient.addColorstop(".75","blue");
+            gradient.addColorstop("1.0","magenta");
+            ctx.font="italic 700 25px Unknown Font, sans-serif";
+            ctx.fillStyle=gradient;
+            
+            for(var i=0;i<150;i+=50){
+                ctx.fillText("Rutuja Lad",i,i);
+            }
+        }
+    </script>
+</body>
+</html>
