@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="progress.html">
+        First Name: <input type="text" name="fname" placeholder="please enter your name">
+        Last Name: <input type="text" name="lname" required> <br>
+        points: <input type="number" name="points" step="3"> <br>
+        Country code: <input type="text" name="Country_code" pattern="[A-Z a-z]{3}" title="Three letter country code"> <br>
+        subject list: <input list="subject" name="browser">
+        <datalist id="subject">
+            <option value="HTML5"></option>
+            <option value="css3"></option>
+            <option value="javascript"></option>
+            <option value="jquery"></option>
+            <option value="xml"></option>
+        </datalist> <br>
+        Enter adate before 1991-22-12: <input type="date" name="bday" max="1991-22-12"> <br>
+         select image: <input type="file" name="img" multiple> <br>
+         <input type="submit" value="submit"> <br>
+         <input type="image" src="../../Pictures/Capture6.PNG" alt="submit" width="48" height="48">  
+    </form>
+</body>
+</html>

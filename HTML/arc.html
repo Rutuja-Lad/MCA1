@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc example</title>
+</head>
+<body>
+    <canvas id="democanvas" width="340" height="340">Canvas</canvas>
+    <script>
+        var canvas=document.getElementById("democanvas");
+        var ctx=canvas.getContext("2d")
+        var x=90;
+        var y=100;
+        var sartAngle=1.1*Math.PI;
+        var endAngle=1.9*Math.PI;
+        var counterClockwise=false;
+        ctx.beginPath();
+        ctx.arc(x,y,startAngle,endAngle,counterClockwise);
+        ctx.lineWidth=10;
+        ctx.strokestyle="green";
+        ctx.stroke();
+    </script>
+</body>
+</html>
